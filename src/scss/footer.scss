@@ -1,0 +1,64 @@
+.footer{
+   padding: 85px 0 86px;
+   background: #FAFAFA;
+   &__img{
+      width: 216px;
+      height: 31px;
+   }
+   &__title{
+      font-family: Lato,sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 22px;
+      margin-bottom: 28px;
+      color: #101010;
+   }
+   &__address{
+      font-family: Lato,sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 150%;
+      color: #101010;
+   }
+   &__menu{
+      list-style-type: none;
+   }
+   &__menu-link{
+      font-family: Lato,sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 160%;
+      text-transform: capitalize;
+      color: #000000;
+   }
+   &__email, &__tel{
+      font-family: Lato,sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 14px;
+      color: #101010;
+      text-decoration: none;
+      margin-bottom: 7px;
+   }
+
+   &__icons{
+      display: flex;
+      column-gap: 10px;
+      margin-top: 15px;
+   }
+   &__copyright{
+
+      font-family: Lato,sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 14px;
+      color: #101010;
+      margin-top: 86px;
+
+   }
+}

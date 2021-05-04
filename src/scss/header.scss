@@ -1,0 +1,80 @@
+@mixin txt($fs,$lh){
+  font-style: normal;
+  font-family: $Lato;
+  font-weight: bold;
+  font-size:$fs;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  line-height:$lh;
+
+}
+.header{
+  height: 100px;
+  width: 100%;
+  position: absolute;
+
+  &__nav{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__logo{
+    display: flex;
+    column-gap: 9px;
+  }
+  &__img{
+    width: 24px;
+    height: 17px;
+  }
+  &__title{
+    @include txt(18px,22px);
+  }
+  &__menu{
+    display: flex;
+    column-gap: 25px;
+    list-style-type: none;
+  }
+  &__item{
+    @include txt(14px,17px);
+    a{
+      color: white;
+      text-decoration: none;
+    }
+
+  }
+  &__form{
+    display: flex;
+    column-gap: 25px;
+    align-items: center;
+  }
+  &__btn{
+    @include txt(14px,17px);
+    width: 100px;
+    height: 40px;
+    border: 1px solid #FFFFFF;
+    border-radius: 6px;
+    outline: none;
+    background-color: transparent;
+    font-weight: normal;
+    cursor: pointer;
+  }
+  &__langSelect{
+    width: 96px;
+    height: 32px;
+    padding-left: 43px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #FFFFFF;
+    cursor: pointer;
+  }
+  &__lang{
+    color: white;
+    background-color: saddlebrown;
+  }
+
+}
+.dd-options li{
+  margin-top: 10px;
+}
